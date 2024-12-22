@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css" >
+    <style>
+       .container{
+        background-image: url('bg.jpg');
+        background-position: right; 
+        background-repeat:no-repeat;
+        background-size: 70% 100%;
+
+
+       }
+       .d{
+        background-color: black;
+        color:white;
+       }
+       
+       
+    </style>
+</head>
+
+
+    <body>
+        <nav>
+            <ul>
+                <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+
+
+
+                <select id="Home" name="Home" class="d">
+                    <option value="Home">Home</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+              
+                <li>About</li>
+                <button onclick="window.location.href='index1.html';" >Logout</button>
+            </ul>
+        </nav>
+
+        <div class="container">
+            
+
+            <div class="songList">
+                <h1>Best of NCS - No Copyright Sounds</h1>
+                <div class="SIC">
+                    <div class="songitem">
+                        <img src="cover1.jpg" alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34<i id="1" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    <div class="songitem">
+                        <img src="2.jpg" alt="1">
+                        <span class="songName">Imagine</span>
+                        <span class="songlistplay"><span class="timestamp">05:34<i id="2" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    <div class="songitem">
+                        <img src="3.jpg" alt="1">
+                        <span class="songName">Hotel California</span>
+                        <span class="songlistplay"><span class="timestamp">05:34<i id="3" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    <div class="songitem">
+                        <img src="4.jpg" alt="1">
+                        <span class="songName">Billie Jean</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="4" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    
+                    <div class="songitem">
+                        <img src="5.jpg" alt="1">
+                        <span class="songName">Shape of You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="5" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    <div class="songitem">
+                        <img src="6.jpg" alt="1">
+                        <span class="songName">Hey Jude</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    <div class="songitem">
+                        <img src="7.jpg" alt="1">
+                        <span class="songName">Rolling in the Deep</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+                    <div class="songitem">
+                        <img src="8.jpg" alt="1">
+                        <span class="songName">Smells Like Teen Spirit</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="fa songItemplay fa-circle-play"></i></span></span>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="songBanner"></div> -->
+        </div>
+
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div class="icons">
+                <!--fontawesome icons-->
+                <i id="1" class="fa-solid fa-backward" id="previous"></i>
+                <i id="1" class="fa fa-circle-play" id="masterplay"></i>
+                <i id="1" class="fa-solid fa-forward" id="next"></i>
+            </div>
+            <div class="songInfo">
+                <img src="playing.gif" width="42px" alt="11" id="gif">Let me Love You - Justin Beiber
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/8783cdb265.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
